@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
+    <meta name='description' content='六角西餐廳' />
+
+
+    <meta property="og:title" content="六角西餐廳" />
+    <meta property="og:description" content="這裡有你外面吃不到的美食">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hexschool.com/" />
+    <meta property="og:image"
+        content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50" />
+    <meta property="og:locale" content="zh_TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./all.css">
+    <script src="./all.js"></script>
+    <title>線上美食預約</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 向上箭頭 -->
+        <i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+        <!-- 導覽條 -->
+        <div class="nav">
+            <h1><a href="index.html">六角西餐廳</a></h1>
+            <ul class="menu">
+                <li><a href="index.html#secret">特色</a></li>
+                <li><a href="index.html#cooker">主廚</a></li>
+                <li><a href="index.html#reserve">地圖</a></li>
+                <li><a class="active" href="cart.html">線上訂購</a></li>
+                <li><a href="login.html">登入</a></li>
+            </ul>
+            <a class="showmenu" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <!-- 橫幅 -->
+        <div class="banner">
+            <div class="slogan">
+                <h2>咬一口就無法忘懷的漢堡</h2>
+                <p>七夕絕對無法錯過的好滋味<br>
+                    <i class="fa fa-cutlery" aria-hidden="true"></i> 六角大漢堡
+                    <i class="fa fa-cutlery" aria-hidden="true"></i>
+                </p>
+            </div>
+        </div>
+        <!-- 內容 -->
+        <div class="content">
+            <!-- 產品選單 -->
+            <div class="order">
+                <!-- 左側選單 -->
+                <div class="category">
+                    <h3><i class="fa fa-leaf fa-2x" aria-hidden="true"></i>線上訂購美食</h3>
+                    <ul>
+                        <li><a href="#">全部(23)</a></li>
+                        <li><a href="#">只愛吃薯條(18)</a></li>
+                        <li><a href="#">加熱就可食(1)</a></li>
+                        <li><a href="#">不敗漢堡系列(4)</a></li>
+                    </ul>
+                </div>
+                <!-- 右側選單 -->
+                <div class="detail">
+                    <!-- 右上選單 -->
+                    <div class="search-check">
+                        <div class="search-icon">
+                            <input type="text" name="search" id="">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="check">
+                            <span><a href="#">結帳去</a></span>｜
+                            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                                    <div class="number">2</div>
+                                </i></a>
+                        </div>
+                    </div>
+                    <!-- 右下選單 -->
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <div class="ribbon-box">
+                                    <div class="hot">熱銷美食</div>
+                                </div>
+                                <div class="img-product"><img src="./assets/product_1.png" alt=""></div>
+                                <h4>經典漢堡套餐</h4>
+                                <h5>Classic Hamburger package</h5>
+                                <hr>
+                                <p>$120</p>
+                                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</button>
+                            </li>
+                            <li>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <div class="img-product"><img src="./assets/product_2.png" alt=""></div>
+                                <h4>英俊香腸</h4>
+                                <h5>Handsome Sausage</h5>
+                                <hr>
+                                <p>$1,024</p>
+                                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</button>
+                            </li>
+                            <li>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <div class="img-product"><img src="./assets/product_3.png" alt=""></div>
+                                <h4>漢堡兄弟</h4>
+                                <h5>Hamburger Brothers</h5>
+                                <hr>
+                                <p>$792</p>
+                                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</button>
+                            </li>
+                            <li>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <div class="img-product"><img src="./assets/product_4.png" alt=""></div>
+                                <h4>完美願望</h4>
+                                <h5>Dragon Ball Package</h5>
+                                <hr>
+                                <p>$999,999</p>
+                                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 註腳 -->
+        <div class="footer">
+            <ul>
+                <li class="about">
+                    <h4>關於六角西餐廳</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestiae dolorem atque enim
+                        iure a id fuga corrupti consequuntur illo </p>
+                </li>
+                <li class="contact">
+                    <h4>聯絡方式</h4>
+                    <ul>
+                        <li><a href="https://www.google.com.tw/maps/place/802高雄市苓雅區中正一路99號"
+                                target="_blank">高雄市中正五路到底</a></li>
+                        <li><a href="tel:886886886">+886 886 886</a></li>
+                        <li><a href="mailto:hexschool@gmail.com">service@hexschool.com</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <img src="./assets/logo_l(null).svg" alt="logo">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
