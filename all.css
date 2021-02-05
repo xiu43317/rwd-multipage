@@ -894,6 +894,7 @@ img {
   right: 0;
   color: #fff;
   background-color: #3D1101;
+  cursor: pointer;
 }
 
 .order .detail .item ul {
