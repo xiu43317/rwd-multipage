@@ -153,7 +153,7 @@
 /* 訂位 */
 .reserve{
     padding: 50px 0;
-    background-color: #f6f4f3;
+    background-color: $background-white;
     h3{
         font-size: 24px;
         text-align: center;
@@ -214,6 +214,7 @@
                         background-color: $btn-gray;
                     }
                     &:nth-child(2){
+                        margin-left: 10px;
                         background-color: $btn-orange;
                     }
                 }
