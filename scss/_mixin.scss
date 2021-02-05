@@ -1,0 +1,58 @@
+@import "./font-color";
+
+@mixin logoTitle {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}   
+@mixin showBorder {
+    border-bottom: 2px solid white;
+}
+@mixin inputDiv {
+    position: relative;
+    text-align: left;
+}
+
+@mixin inputText {
+    width: 100%;
+    padding: 5px 0px 5px 30px;
+    outline: none;
+    font-size: 16px;
+}
+@mixin emailIcon {
+    position: absolute;
+    content: "\f003";
+    font-family: FontAwesome;
+    font-weight: 100; 
+    font-size: 14px;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+@mixin passwordIcon {
+    position: absolute;
+    content: "\f023";
+    font-family: FontAwesome;
+    font-weight: 100; 
+    font-size: 14px;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+}
+@mixin remind {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    color: $order-orange;
+}
+@mixin btn {
+    color: $font-white;
+    width: 125px;
+    padding: 6px 0;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}

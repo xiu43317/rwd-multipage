@@ -1,0 +1,80 @@
+@import "./font-color";
+@import "./grid";
+@import "./mixin";
+
+.register{
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    h3{
+        font-size: 20px;
+        margin-bottom: 35px; 
+    }
+    .info-container{
+        border-top: 3px solid $order-orange;
+        padding: 10px 15px;
+        box-shadow: 3px 3px 3px $border-gray;
+        @include customize660{
+            width: 95%;
+            margin: 0 auto;
+        }
+        h4{
+            font-family: NotoSansCJKtc-Black;
+            font-size: 18px;
+            font-weight:bold;
+            margin-bottom: 16px;
+        }
+        .info-set{
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            @include customize660{
+                display: block;
+            }
+            p{
+                width: 48%;
+                span{
+                    font-size: 18px;
+                    line-height: 2;
+                }
+                @include customize660{
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto 30px;
+                }
+            }
+            .email-set{
+                width: 48%;
+                position: relative;
+                padding-bottom: 77px;
+                @include customize660{
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+                label{
+                    text-align: left;
+                }
+                .password-input{
+                    margin: 3px 0 16px 0;
+                }
+                .email-input{
+                    margin: 3px 0 16px 0;
+                }
+                a{
+                    margin-top: 1px;
+                    display: block;
+                    @include remind;
+                }
+                .register-btn{
+                    @include btn;
+                    bottom: 0px;
+                    right: 0;
+                    position: absolute;
+                    background: $btn-orange;
+                }
+            }
+        }
+    }
+}
