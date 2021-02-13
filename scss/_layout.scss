@@ -1,7 +1,6 @@
 @import "./font-color";
 @import "./mixin";
 @import "./grid";
-@import "./component";
 
 .body{
     font-family: 
@@ -35,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 42px;
+    z-index: 100;
     h1 {
         a {
             font-size: 21px;
@@ -92,21 +92,24 @@
 }
 /* 橫幅 */
 .banner {
+    position: relative;
     text-align: center;
     background-image: url("./assets/header_desktop.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
-    padding: 123px 0 141px;
+    height: 420px;
     @include mobileLandscape() {
         background-image: url("./assets/header_mobile.png");
-        padding-bottom: 95px;
     }
     .slogan {
         max-width: 460px;
         padding: 20px 2% 26px;
         background: rgba(0, 0, 0, 0.5);
-        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
         @include mobileLandscape() {
             max-width: 300px;
         }
