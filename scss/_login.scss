@@ -1,48 +1,56 @@
-@import "./font-color";
-@import "./grid";
-@import "./mixin";
-
-.login{
+.login {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
-    h3{
+    /* 框外標題 */
+    h3 {
         font-size: 20px;
         margin: 5px 0 35px 0;
     }
-    form{
+    /* 表格框 */
+    form {
         border-top: 3px solid $order-orange;
         padding: 15px;
         box-shadow: 3px 3px 3px $border-gray;
-        *{
+        * {
             display: block;
         }
-        h4{
+        /* 框內標題 */
+        h4 {
             font-family: NotoSansCJKtc-Black;
             font-size: 18px;
-            font-weight:bold;
+            font-weight: bold;
         }
-        label{
+        /* 輸入框標籤 */
+        label {
             margin: 16px 0 3px 0;
             text-align: left;
             position: relative;
         }
-        a{
+        /* 密碼提醒 */
+        a {
             margin-top: 16px;
             margin-bottom: 77px;
             @include remind;
+            &:hover{
+                color: blue;
+            }
         }
-        .btn{
+        /* 按鈕 */
+        .btn {
             display: flex;
             justify-content: space-between;
-            input{
+            input {
                 @include btn;
-                &:nth-child(1){
+                &:hover{
+                    color: blue;
+                }
+                &:nth-child(1) {
                     background: $btn-secondary;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                     background: $btn-orange;
                 }
             }

@@ -1,12 +1,6 @@
-@import "./font-color";
-@import "./mixin";
-@import "./grid";
-
-.body{
-    font-family: 
-    -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,MicrosoftJhengHeiRegular,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+.body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        MicrosoftJhengHeiRegular, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .wrap {
     max-width: 1024px;
@@ -99,7 +93,7 @@
     background-attachment: fixed;
     background-position: top;
     height: 420px;
-    @include mobileLandscape() {
+    @include ipad() {
         background-image: url("./assets/header_mobile.png");
     }
     .slogan {
@@ -109,8 +103,8 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
-        @include mobileLandscape() {
+        transform: translate(-50%, -50%);
+        @include ipad() {
             max-width: 300px;
         }
         h2 {
@@ -118,7 +112,7 @@
             font-size: 36px;
             margin-bottom: 16px;
         }
-        P {
+        p {
             color: $font-white;
             font-size: 16px;
             line-height: 1.5;
@@ -131,80 +125,75 @@
 }
 /* 註腳 */
 .footer {
-    padding: 50px 0;
+    padding: 50px 3%;
     background-color: $background-light;
+    position: relative;
+    display: flex;
     @include ipad() {
         padding-bottom: 10px;
+        display: block;
     }
-    > ul {
-        position: relative;
-        display: flex;
-        margin: 0 3%;
+    > div {
+        width: 33%;
         @include ipad() {
-            display: block;
-        }
-        > li {
-            width: 33%;
-            @include ipad() {
-                width: 100%;
-                margin: 0 auto 30px;
-            }
-            h4 {
-                font-size: 24px;
-                margin-bottom: 16px;
-            }
-        }
-    }
-    .about {
-        margin-right: 20px;
-        @include ipad() {
+            width: 100%;
             margin: 0 auto 30px;
         }
-    }
-    .contact {
-        li {
-            list-style-type: disc;
-            list-style-position: inside;
-        }
-        a {
-            display: inline-block;
-            color: $font-brown;
-            text-decoration: none;
-            &:hover {
-                background-color: $font-brown;
-                color: $font-white;
-            }
+        h4 {
+            font-size: 24px;
+            margin-bottom: 16px;
         }
     }
-    .link {
-        position: absolute;
+}
+.about {
+    margin-right: 20px;
+    @include ipad() {
+        margin: 0 auto 30px;
+    }
+}
+.contact {
+    li {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    a {
+        display: inline-block;
+        color: $font-brown;
+        text-decoration: none;
+        &:hover {
+            background-color: $font-brown;
+            color: $font-white;
+        }
+    }
+}
+.link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 2%;
+    @include ipad() {
+        position: static;
+    }
+    img {
+        width: 245px;
+    }
+    ul {
+        margin-top: 22px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        right: 0;
-        @include ipad() {
-            position: static;
-        }
-        img {
-            width: 245px;
-        }
-        ul {
-            margin-top: 22px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        a {
-            display: block;
-            margin-left: 11px;
-        }
-        .fa-google-plus-square {
-            color: $gplus-color;
-        }
-        .fa-twitter-square {
-            color: $tw-color;
-        }
-        .fa-facebook-square {
-            color: $fb-color;
-        }
+        justify-content: flex-end;
+    }
+    a {
+        display: block;
+        margin-left: 11px;
+    }
+    .fa-google-plus-square {
+        color: $gplus-color;
+    }
+    .fa-twitter-square {
+        color: $tw-color;
+    }
+    .fa-facebook-square {
+        color: $fb-color;
     }
 }

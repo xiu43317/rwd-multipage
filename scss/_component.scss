@@ -1,10 +1,10 @@
-@import "./mixin";
-
+/* 顯示導覽列 */
 .menu-show {
-    .menu {
+    .nav .menu {
         max-height: 500px;
     }
 }
+/* email輸入欄 */
 .email-input {
     @include inputDiv;
     &:before {
@@ -14,6 +14,7 @@
         @include inputText;
     }
 }
+/* 密碼輸入欄 */
 .password-input {
     &:before {
         @include passwordIcon;
@@ -29,6 +30,7 @@
     transition: all 1.5s;
     transform: translateY(50px);
 }
+/* 淡入效果 */
 .fadeIn {
     opacity: 1;
     transform: translateY(0);

@@ -1,7 +1,16 @@
+/* css reset */
 @import "./reset";
+/* 字體顏色 */
+@import "./font-color";
+/* 通用 */
+@import "./mixin";
+@import "./grid";
+@import "./component";
+/* 通用頁面 */
 @import "./layout";
+/* 不同頁面 */
 @import "./index";
-@import "./cart";
 @import "./login";
 @import "./register";
-@import "./component";
+@import "./cart";
+

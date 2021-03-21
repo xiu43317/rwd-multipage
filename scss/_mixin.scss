@@ -1,52 +1,57 @@
-@import "./font-color";
-
+/* logo取代h1標題 */
 @mixin logoTitle {
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
-}   
+}
+/* 顯示下底線 */
 @mixin showBorder {
     border-bottom: 2px solid white;
 }
+/* 輸入欄外框 */
 @mixin inputDiv {
     position: relative;
     text-align: left;
 }
-
+/* 輸入欄 */
 @mixin inputText {
     width: 100%;
     padding: 5px 0px 5px 30px;
     outline: none;
     font-size: 16px;
 }
+/* email圖示 */
 @mixin emailIcon {
     position: absolute;
     content: "\f003";
     font-family: FontAwesome;
-    font-weight: 100; 
+    font-weight: 100;
     font-size: 14px;
     z-index: 100;
     top: 50%;
     transform: translateY(-50%);
     left: 10px;
 }
+/* 鎖圖示 */
 @mixin passwordIcon {
     position: absolute;
     content: "\f023";
     font-family: FontAwesome;
-    font-weight: 100; 
+    font-weight: 100;
     font-size: 14px;
     z-index: 100;
     top: 50%;
     transform: translateY(-50%);
     left: 13px;
 }
+/* 忘記密碼提醒 */
 @mixin remind {
     font-size: 14px;
     text-decoration: none;
     text-align: left;
     color: $order-orange;
 }
+/* 按鈕樣式 */
 @mixin btn {
     color: $font-white;
     width: 125px;
